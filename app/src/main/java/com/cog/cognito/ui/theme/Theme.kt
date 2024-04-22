@@ -22,15 +22,15 @@ import com.cog.cognito.ui.theme.CognitoColors.PurpleGrey40
 import com.cog.cognito.ui.theme.CognitoColors.PurpleGrey80
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80,
+    primary = CognitoColors.Neutral_dark,
+    secondary = CognitoColors.Neutral_dark,
+    tertiary = CognitoColors.Neutral_dark,
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40,
+    primary = CognitoColors.Neutral_dark,
+    secondary = CognitoColors.Neutral_dark,
+    tertiary = CognitoColors.Neutral_dark,
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -63,7 +63,9 @@ fun CognitoTheme(
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = colorScheme.primary.toArgb()
+            window.statusBarColor = CognitoColors.Neutral_main.toArgb()
+            window.navigationBarColor = CognitoColors.Neutral_main.toArgb()
+
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
         }
     }

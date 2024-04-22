@@ -15,6 +15,7 @@ import com.cog.cognito.data.model.AnswerBoxModel
 @Composable
 fun AnswerBoxComponent(
     answerBoxModels: List<AnswerBoxModel>,
+    removeLastWrongLetter: () -> Unit,
 ) {
     FlowRow(
         modifier = Modifier.fillMaxWidth(),
@@ -27,6 +28,9 @@ fun AnswerBoxComponent(
                 CognitoTextBoxSingleBorder(
                     answerTextBoxState = answerBoxModel.answerTextBoxState,
                     text = answerBoxModel.input,
+                    removeLastWrongLetter = {
+                        removeLastWrongLetter()
+                    }
                 )
             }
         }

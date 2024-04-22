@@ -1,4 +1,4 @@
-package com.cog.cognito.data
+package com.cog.cognito.data.questions
 
 import com.cog.cognito.data.model.Difficulty
 import com.cog.cognito.data.model.GameQuestion

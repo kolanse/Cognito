@@ -49,7 +49,7 @@ fun CognitoLongFormButton(
         onClick = onClick,
         modifier = Modifier
             .fillMaxWidth(0.8f)
-            .height(50.dp)
+            .height(64.dp)
             .shadow(
                 ambientColor = CognitoColors.Orange_shadow,
                 spotColor = CognitoColors.Orange_shadow,

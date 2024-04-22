@@ -16,6 +16,9 @@ object CognitoColors {
     val Neutral_main = Color(0xFF888888)
     val Neutral_light = Color(0xFFf0f0f0)
 
+    // white 20 percent transparency
+    val Black_20_percent_transparency = Color(0xFF32f0f0f0)
+
     // white
     val white = Color(0xFFffffff)
 
@@ -40,7 +43,6 @@ object CognitoColors {
     val Green_main = Color(0xFF66BB6A)
     val Green_light = Color(0xFFD0EAD1)
 
-
     // Error
     val Error_light = Color(0xFFFFECE9)
     val Error_main = Color(0xFFFF4423)
@@ -48,22 +50,19 @@ object CognitoColors {
     // Success
     val Success_light = Color(0xFFF5FBE9)
     val Success_main = Color(0xFF9CD323)
+
     // Button
     val Button_top_gradient = Color(0xFFEADE98)
     val Button_bottom_gradient = Color(0xFFFFA500)
 
-    //background Colors
+    // background Colors
     val Background_screen_dark = Color(0xFF262626)
     val Tile_Bg_color = Color(0xFF444444)
 
-    //textbox
+    // textbox
     val Empty_textbox_single_border = Color(0xFFF0E7BD)
 
-    //shadow
+    // shadow
     val Black_shadow = Color(0xFF292402)
-
-
-
-
-
+    val Black = Color(0xFF000000)
 }

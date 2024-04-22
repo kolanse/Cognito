@@ -3,7 +3,7 @@ package com.cog.cognito.util
 
 fun String.shuffleString(): List<String>{
 
-    val charactersAdded = this + getRandomString(4)
+    val charactersAdded = (this + getRandomString(4)).toUpperCase()
 
    return charactersAdded.toList().shuffled().map {
         it.toString()
